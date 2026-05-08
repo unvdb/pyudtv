@@ -52,8 +52,7 @@ client = MilvusClient(f"unvdb://{user_name}:{password}@{host}:{port}/{db_name}")
 | 超结构距离（分子指纹） | - | SUPERSTRUCTURE |
 
 5、 filter 查询
-语法参考： https://milvus.io/docs/zh/basic-operators.md
-向下兼容基本操作符， 不支持json数据过滤操作。 支持 unvdb 函数调用， 支持加减乘除计算。
+向下兼容pymilvus基本操作符， 不支持json数据过滤操作。 支持 unvdb 函数调用， 支持加减乘除计算。
 
 ### PyUDTV Filter 与 PyMilvus Filter 差异对比
 
