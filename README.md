@@ -140,22 +140,6 @@ print(f"删除测试表：{COLLECTION_NAME}")
 
 ```
 
-## 链接pymilvus原始的后端
-```python
-from pymilvus import MilvusClient
-# 无token登录
-client = MilvusClient("http://localhost:19530")
-
-# token登录
-client = MilvusClient(
-    uri="http://localhost:19530",
-    token="user:password", # replace this with your token
-    db_name="default"
-)
-
-# 
-```
-
 ## 字符串处理
 ```txt
 支持单引号与双引号字符串： 'abc', "abc", "print('hello world')"
@@ -174,7 +158,7 @@ schema.add_field(field_name="desc", datatype=DataType.VARCHAR, max_length=200, n
 
 ## 接口列表
 
-DBClientBase 类（继承自 MilvusClient）重写了以下接口，用于支持 UNVDB 作为后端存储：
+DBClient类实现了以下接口：
 
 | 序号 | 方法名 | 说明                        |
 |------|--------|---------------------------|
@@ -596,6 +580,3 @@ def close(self)
 关闭数据库连接。
 
 ---
-
-## pymilvus官方文档链接
-以上是pymilvus接口简要说明，详情请参考 https://milvus.io/docs
