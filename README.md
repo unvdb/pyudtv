@@ -29,7 +29,7 @@ client = MilvusClient(f"unvdb://{user_name}:{password}@{host}:{port}/{db_name}")
 
 3、 索引类型对比
 
-| 特性                | UDBClientBase | Milvus |
+| 特性                | UDBClient | Milvus |
 |-------------------|--------------|--------|
 | 暴力搜索              | - | FLAT |
 | 倒排文件索引            | IVF_FLAT | IVF_FLAT |
@@ -40,7 +40,7 @@ client = MilvusClient(f"unvdb://{user_name}:{password}@{host}:{port}/{db_name}")
 
 4、 距离计算类型对比
 
-| 特性 | UDBClientBase | Milvus |
+| 特性 | UDBClient | Milvus |
 |------|--------------|--------|
 | 欧氏距离 | L2 | L2 |
 | 内积 | IP | IP |
