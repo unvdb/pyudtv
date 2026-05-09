@@ -1,4 +1,4 @@
-# 九有数据库pymilvus使用
+# 九有数据库PYUDTV使用
 ## 简介
 pyudtv 基于 unvdb vector 向量检索开发， client 接口向下兼容pymilvus接口，确保现有代码几乎零修改。
 
